@@ -7,11 +7,13 @@ pkgs.mkShell rec {
   buildInputs = [
     python312Packages.python
     python312Packages.venvShellHook
+    python312Packages.jupyterlab
+    python312Packages.matplotlib
   ];
 
   postVenvCreation = ''
     unset SOURCE_DATE_EPOCH
-    pip install -r requirements.txt
+    # pip install -r requirements.txt
     '';
 
   postShellHook = ''
