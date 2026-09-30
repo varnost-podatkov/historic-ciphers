@@ -6,4 +6,11 @@ Za poganjanje potrebujete sodobni Python ter knjižnici `jupyter-lab` ter `matpl
 pip install --upgrade jupyterlab matplotlib
 ```
 
+ali z
+
+
+```sh
+pip install --upgrade -r requirements.txt
+```
+
 
